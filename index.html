@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -164,28 +165,22 @@
                 </div>
                 <form id="bookingForm" class="booking-form" action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="c583e567-b467-4f99-a1b0-3c818882d856">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <div class="col-12">
+                        <input type="text" name="name" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;width: 100%" required>
                     </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
-                        <input type="datetime-local" id="datetime" name="datetime" required>
+                    <div class="col-12">
+                        <input type="email" name="email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px; width: 100%" required>
                     </div>
-                    <select id="service" name="service" required>
-                        <option value="">Select Service</option>
-                        <option value="website">Website Development</option>
-                        <option value="assistant">Virtual Assistant</option>
-                        <option value="blog">Blog Management</option>
-                    </select>
-                    <textarea id="message" name="message" placeholder="Tell us about your project" required></textarea>
-                    <button type="submit">
-                        <span>Schedule Free Consultation</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
-                    <p class="form-trust">
-                        <i class="fas fa-lock"></i> Your information is secure and will never be shared
-                    </p>
+                    <div class="col-12">
+                        <input type="text" name="name" class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px;width: 100%" required>
+                    </div>
+                    <div class="col-12">
+                        <textarea name="message" class="form-control border-0 bg-light px-4 py-3" rows="5" placeholder="Message"style="height: 55px; width: 100%" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                    </div>
                 </form>
             </div>
         </div>
