@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Bumbly Web Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Bumbly</div>
+            <ul class="nav-links">
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#benefits">Benefits</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="blog-section">
+        <div class="blog-header">
+            <h1>Insights & Updates</h1>
+            <p>Stay updated with the latest trends in web development and digital transformation</p>
+            <div class="blog-categories">
+                <button class="category-btn active" data-category="all">All Posts</button>
+                <button class="category-btn" data-category="web-dev">Web Development</button>
+                <button class="category-btn" data-category="ai">AI & Automation</button>
+                <button class="category-btn" data-category="seo">SEO & Marketing</button>
+            </div>
+        </div>
+
+        <div class="blog-search">
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search articles...">
+            </div>
+            <select id="sortPosts">
+                <option value="newest">Newest First</option>
+                <option value="oldest">Oldest First</option>
+                <option value="popular">Most Popular</option>
+            </select>
+        </div>
+
+        <div id="blogPosts" class="blog-grid">
+            <!-- Blog posts will be dynamically added here -->
+        </div>
+        
+        <div class="blog-form">
+            <h2>Share Your Insights</h2>
+            <form id="blogForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="c583e567-b467-4f99-a1b0-3c818882d856">
+                <input type="text" id="blogTitle" name="title" placeholder="Blog Title" required>
+                <select id="blogCategory" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="web-dev">Web Development</option>
+                    <option value="ai">AI & Automation</option>
+                    <option value="seo">SEO & Marketing</option>
+                </select>
+                <textarea id="blogContent" name="content" placeholder="Share your knowledge..." required></textarea>
+                <div class="form-footer">
+                    <div class="word-count">0 words</div>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Publish Post</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Bumbly</div>
+            <p>Transforming businesses through innovative web solutions</p>
+            <p>&copy; 2025 Bumbly. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="blog.js"></script>
+</body>
+</html>
