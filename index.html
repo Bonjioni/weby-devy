@@ -163,25 +163,26 @@
                         <p><i class="fas fa-phone"></i> 07903399850</p>
                     </div>
                 </div>
-                <form id="bookingForm" class="booking-form" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="c583e567-b467-4f99-a1b0-3c818882d856">
-                    <div class="col-12">
-                        <input type="text" name="name" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;width: 100%" required>
-                    </div>
-                    <div class="col-12">
-                        <input type="email" name="email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px; width: 100%" required>
-                    </div>
-                    <div class="col-12">
-                        <input type="text" name="name" class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px;width: 100%" required>
-                    </div>
-                    <div class="col-12">
-                        <textarea name="message" class="form-control border-0 bg-light px-4 py-3" rows="5" placeholder="Message"style="height: 55px; width: 100%" required></textarea>
-                    </div>
-                    <div class="col-12">
-                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                    </div>
-                </form>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="c583e567-b467-4f99-a1b0-3c818882d856">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <input type="text" name="name" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;">
+                            </div>
+                            <div class="col-12">
+                                <input type="email" name="email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px;">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="name" class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px;">
+                            </div>
+                            <div class="col-12">
+                                <textarea name="message" class="form-control border-0 bg-light px-4 py-3" rows="5" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
             </div>
         </div>
     </section>
